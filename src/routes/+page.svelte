@@ -2,33 +2,22 @@
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import Formulario from './Formulario.svelte';
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Formulario de Participación ciudadana y compromisos de la Defensoría del Pueblo de Colombia</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
+<p class="parrafo">Formulario de participación ciudadana y compromisos de la Defensoría del Pueblo de Colombia</p>
 
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
-</section>
+<Formulario />
 
 <style>
+	.parrafo {
+		text-align: center;
+	}
 	section {
 		display: flex;
 		flex-direction: column;
